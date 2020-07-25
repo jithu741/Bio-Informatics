@@ -1,0 +1,9 @@
+def Reverse(Pattern):
+    Pattern = Pattern[::-1]
+    return Pattern
+
+
+Pattern = "AAAACCCGGT"    
+
+print(Reverse(Pattern))
+    
