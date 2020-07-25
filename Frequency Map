@@ -1,0 +1,13 @@
+# FrequencyMap function In Python.
+
+def FrequencyMap(k,Text):
+    
+    freq = {}  #empty Dictionary
+    for i in range ( len(Text) - k + 1 ) :
+        Pattern = Text[i:i+k]
+        freq[Pattern] = 0 
+        for i in range ( len(Text) - k + 1):
+            if Text[i:i+k] == Pattern:
+                freq[Pattern] += 1
+    return freq     
+            
