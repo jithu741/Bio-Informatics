@@ -1,0 +1,17 @@
+def ReverseComplement(Pattern):
+    Pattern = Reverse(Pattern)
+    Pattern = Complement(Pattern)
+    
+    return Pattern
+    
+    
+def Reverse(Pattern):
+    a = Pattern[::-1]
+    return a 
+    
+def Complement(Pattern):
+    return(Pattern.replace("A","t").replace("T","a").replace("G","c").replace("C","g").upper())
+    
+Pattern = "AAAACCCGGT"  
+
+print(ReverseComplement(Pattern))
