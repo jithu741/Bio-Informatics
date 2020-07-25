@@ -1,0 +1,6 @@
+    
+def Complement(Pattern):
+    return(Pattern.replace("A","t").replace("G","c").replace("T","a").replace("C","g").upper())
+
+
+print(Complement(Pattern))   
